@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Management</title>
+</head>
+<body>
+
+<div id="container">
+  <h2>Student Management</h2>
+  <form id="studentForm">
+    <label for="studentId">Student ID:</label>
+    <input type="text" id="studentId" name="studentId" maxlength="6"><br><br>
+    
+    <label for="studentName">Student Name:</label>
+    <input type="text" id="studentName" name="studentName"><br><br>
+    
+    <label for="age">Age:</label>
+    <input type="number" id="age" name="age"><br><br>
+    
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{10,11}"><br><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+    
+    <button type="button" id="createButton">Create</button>
+  </form>
+  
+  <div id="studentInfo" style="display: none;">
+    <h3>Student Information:</h3>
+    <p><strong>Student ID:</strong> <span id="infoStudentId"></span></p>
+    <p><strong>Student Name:</strong> <span id="infoStudentName"></span></p>
+    <p><strong>Age:</strong> <span id="infoAge"></span></p>
+    <p><strong>Phone:</strong> <span id="infoPhone"></span></p>
+    <p><strong>Email:</strong> <span id="infoEmail"></span></p>
+  </div>
+</div>
+
+<script src="/bt4.js">
+
+</script>
+
+</body>
+</html>

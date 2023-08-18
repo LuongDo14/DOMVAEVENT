@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Đặt hàng online</title>
+</head>
+<body>
+
+<div>
+  <h2>Thông tin người mua</h2>
+  <form id="buyerForm">
+    <div>
+      <label for="buyerName">Họ và tên:</label>
+      <input type="text" id="buyerName" name="buyerName" required>
+    </div>
+    
+    <div>
+      <label for="buyerEmail">Email:</label>
+      <input type="email" id="buyerEmail" name="buyerEmail" required>
+    </div>
+    
+    <div>
+      <label for="orderDate">Ngày đặt hàng (dd-mm-yyyy):</label>
+      <input type="text" id="orderDate" name="orderDate" pattern="[0-3][0-9]-[0-1][0-9]-[0-9]{4}" required>
+    </div>
+    
+    <div>
+      <button type="button" id="copyButton">Tôi là người nhận</button>
+    </div>
+  </form>
+</div>
+
+<div>
+  <h2>Thông tin người nhận</h2>
+  <form id="recipientForm">
+    <div>
+      <label for="recipientName">Họ và tên:</label>
+      <input type="text" id="recipientName" name="recipientName" readonly>
+    </div>
+    
+    <div>
+      <label for="recipientEmail">Email:</label>
+      <input type="email" id="recipientEmail" name="recipientEmail" readonly>
+    </div>
+    
+    <div>
+      <label for="recipientOrderDate">Ngày đặt hàng:</label>
+      <input type="text" id="recipientOrderDate" name="recipientOrderDate" readonly>
+    </div>
+  </form>
+</div>
+
+<div>
+  <button type="button" id="sendEmailButton">Gửi mail cho tôi</button>
+  <button type="button" id="orderButton">Đặt hàng</button>
+  <button type="button" id="resetButton">Nhập lại</button>
+</div>
+
+<script src="/bt10.js"></script>
+
+</body>
+</html>
